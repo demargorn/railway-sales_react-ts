@@ -1,0 +1,36 @@
+.about {
+   max-width: 1920px;
+   border-top: 8px solid #ffa800;
+}
+
+.about__title {
+   font-size: 36px;
+   font-weight: 500;
+   line-height: 100%;
+   text-transform: uppercase;
+   margin: 145px 0px 30px 260px;
+}
+
+.about__content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 260px;
+   max-width: 1320px;
+   margin-bottom: 90px;
+   padding-left: 20px;
+   border-left: 9px solid #ffa800;
+}
+
+.about__text {
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 100%;
+   margin-bottom: 30px;
+}
+
+.about__text_bold {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 100%;
+}
