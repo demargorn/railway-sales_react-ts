@@ -1,6 +1,6 @@
 .footer__container {
+   min-width: 920px;
    background-color: #2d2b2f;
-   max-width: 1920px;
 }
 
 .footer__top {

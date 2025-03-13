@@ -1,5 +1,5 @@
 .about {
-   max-width: 1920px;
+   min-width: 920px;
    border-top: 8px solid #ffa800;
 }
 
@@ -16,7 +16,7 @@
    flex-direction: column;
    justify-content: center;
    margin-left: 260px;
-   max-width: 1320px;
+   max-width: 1520px;
    margin-bottom: 90px;
    padding-left: 20px;
    border-left: 9px solid #ffa800;

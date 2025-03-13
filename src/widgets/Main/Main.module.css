@@ -1,12 +1,13 @@
 .main {
    display: flex;
    flex-direction: column;
+   position: relative;
    width: 100%;
-   max-width: 1920px;
-   background: no-repeat url('/src/shared/images/main-background.png');
-   background-size: contain;
-   padding-top: 15px;
+   min-width: 920px;
    min-height: 985px;
+   background: no-repeat url('/src/shared/images/main-background.png');
+   background-size: cover;
+   padding-top: 15px;
 }
 
 .logo {
@@ -38,6 +39,7 @@
    color: #fff;
    text-decoration: none;
 }
+
 .navbar__link:hover {
    color: #ffa800;
 }
@@ -62,4 +64,123 @@
    font-weight: 700;
    line-height: 100%;
    color: #fff;
+}
+
+.search-form {
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   position: relative;
+   width: 100%;
+   max-width: 730px;
+   margin-left: 960px;
+   margin-top: -270px;
+}
+
+.search-form::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #292929;
+   opacity: 0.8;
+   z-index: 1;
+}
+
+.search-form__direction,
+.search-form__date {
+   display: flex;
+   flex-direction: column;
+   z-index: 2;
+}
+
+.search-form__direction-label,
+.search-form__date-label {
+   font-size: 30px;
+   font-weight: 300;
+   line-height: 100%;
+   color: #fff;
+   margin: 60px 0px 10px 20px;
+}
+
+.search-form__direction-input,
+.search-form__date-input {
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 100%;
+   padding: 5px;
+   width: 325px;
+   height: 60px;
+   border-radius: 5px;
+   margin: 0px 20px;
+}
+
+.search-form__direction-input::placeholder,
+.search-form__date-input::placeholder {
+   font-size: 20px;
+   color: #e5e5e5;
+   padding: 5px;
+}
+
+.search-form__button {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 100%;
+   color: #000;
+   background-color: #ffa800;
+   width: 325px;
+   height: 60px;
+   text-transform: uppercase;
+   border-radius: 5px;
+   margin: 90px 40px 50px 0px;
+   z-index: 2;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+   .logo {
+      margin-left: 120px;
+   }
+
+   .navbar__content {
+      margin-left: 120px;
+   }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+   .logo {
+      font-size: 36px;
+      margin-left: 60px;
+   }
+
+   .navbar__content {
+      margin-left: 35px;
+   }
+
+   .navbar__link {
+      font-size: 30px;
+   }
+
+   .main-title {
+      margin-top: 415px;
+      margin-left: 250px;
+   }
+}
+
+@media (max-width: 481px) {
+   .logo {
+      font-size: 45px;
+      margin-left: 45px;
+   }
+
+   .navbar__content {
+      margin-left: 45px;
+   }
+
+   .main-title {
+      width: 510px;
+      font-size: 64px;
+      margin: 50px auto 0 auto;
+   }
 }
