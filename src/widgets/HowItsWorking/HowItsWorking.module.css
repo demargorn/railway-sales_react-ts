@@ -1,8 +1,7 @@
 .how-its-working {
    position: relative;
    width: 100%;
-   min-width: 920px;
-   max-height: 575px;
+   max-height: 800px;
    background: url(/src/shared/images/how-its-working_background.png) no-repeat;
    background-size: cover;
    background-position: top center;
@@ -24,32 +23,35 @@
 
 .how-its-working__header {
    display: flex;
-   gap: 40%;
    align-items: center;
-   margin-bottom: 105px;
-   padding-top: 60px;
+   justify-content: space-around;
+   width: 100%;  
+   margin-bottom: 5%;
+   padding-top: 5%;
 }
 
 .how-its-working__title {
-   font-size: 36px;
+   font-size: 2vw;
    font-weight: 500;
    line-height: 100%;
-   color: #fff;
+   color: rgba(229, 229, 229, 1);
+   margin-right: 30%;
    text-transform: uppercase;
-   margin-left: 260px;
+   text-align: center;
 }
 
 .how-its-working__button {
-   font-size: 24px;
+   font-size: 2.5vw; 
    font-weight: 700;
-   line-height: 100%;
-   width: 325px;
-   height: 60px;
-   border: 1px solid #fff;
+   min-width: 30%; 
+   min-height: 5vh; 
+   border: 1px solid rgba(229, 229, 229, 1);
    background: none;
    border-radius: 5px;
-   color: #fff;
+   color: rgba(229, 229, 229, 1);
+   padding: 1%;
    cursor: pointer;
+   transition: all 0.3s;
 }
 
 .how-its-working__button:hover {
@@ -58,14 +60,13 @@
 }
 
 .how-its-working__button:active {
-   background-color: #fff;
+   background-color: rgba(229, 229, 229, 1);
 }
 
 .how-its-working__body {
    display: flex;
-   justify-content: center;
-   gap: 200px;
-   padding-bottom: 90px;
+   justify-content: space-between; 
+   padding-bottom: 5%;
 }
 
 .how-its-working__order,
@@ -75,18 +76,19 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   flex: 1;
 }
 
 .how-its-working__image {
-   width: 162px;
-   margin-bottom: 35px;
+   width: 8vw;
+   margin-bottom: 3%;
 }
 
 .how-its-working__text {
-   font-size: 24px;
+   font-size: 2vw;
    font-weight: 400;
-   line-height: 100%;
-   width: 225px;
+   line-height: 120%;
+   width: 60%;
    text-align: center;
-   color: #fff;
+   color: rgba(229, 229, 229, 1);
 }
