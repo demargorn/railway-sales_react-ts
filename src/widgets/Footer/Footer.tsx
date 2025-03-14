@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className={styles['footer__container']}>
          <section className={styles['footer__top']}>
             <aside className={styles['left-panel']}>
-               <h4 className={styles['left-panel__title']}>Свяжитесь с нами</h4>
+               <h3 className={styles['left-panel__title']}>Свяжитесь с нами</h3>
                <div className={styles['left-panel__phone']}>
                   <img
                      src='/src/shared/icons/phone-icon.svg'
@@ -48,7 +48,7 @@ const Footer = () => {
             </aside>
             <article className={styles['subscribe-panel']}>
                <div className={styles['subscribe-panel__email']}>
-                  <h4 className={styles['subscribe-panel__title']}>Подписка</h4>
+                  <h3 className={styles['subscribe-panel__title']}>Подписка</h3>
                   <form className={styles['subscribe-panel__form']}>
                      <label
                         htmlFor='subscribe-panel__input'
@@ -69,7 +69,7 @@ const Footer = () => {
                   </form>
                </div>
                <div className={styles['subscribe-panel__social']}>
-                  <h4 className={styles['subscribe-panel__title']}>Подписывайтесь на нас</h4>
+                  <h3 className={styles['subscribe-panel__title']}>Подписывайтесь на нас</h3>
                   <div className={styles['subscribe-panel__socials']}>
                      <a href='#' className={styles['subscribe-panel__icon']}>
                         <img src='/src/shared/icons/youtube-icon.svg' alt='youtube icon' />

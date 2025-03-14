@@ -143,8 +143,22 @@
       margin-left: 120px;
    }
 
+   .navbar {
+      height: 90px;
+   }
+
    .navbar__content {
       margin-left: 120px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .navbar__link:not(:first-child) {
+      margin-left: 80px;
+   }
+
+   .main-title {
+      margin-top: 400px;
    }
 }
 
@@ -153,33 +167,34 @@
       font-size: 36px;
       margin-left: 60px;
    }
-
-   .navbar__content {
-      margin-left: 35px;
-   }
-
-   .navbar__link {
-      font-size: 30px;
-   }
-
-   .main-title {
-      margin-top: 415px;
-      margin-left: 250px;
-   }
 }
 
 @media (max-width: 481px) {
    .logo {
-      font-size: 45px;
-      margin-left: 45px;
+      font-size: 40px;
+      margin: 0 auto;
+   }
+
+   .navbar {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
    }
 
    .navbar__content {
-      margin-left: 45px;
+      margin-left: 20px;
+   }
+
+   .navbar__link {
+      margin-left: 20px;
+   }
+
+   .navbar__link:not(:first-child) {
+      margin-left: 30px;
    }
 
    .main-title {
-      width: 510px;
+      width: 500px;
       font-size: 64px;
       margin: 50px auto 0 auto;
    }
