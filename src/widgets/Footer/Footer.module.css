@@ -1,7 +1,6 @@
 .footer__container {
    width: 100%;
    background-color: #2d2b2f;
-   padding: 1%;
 }
 
 .footer__top {
@@ -13,22 +12,22 @@
 
 .left-panel {
    flex: 1;
-   margin-top: 3%;
+   margin-top: 2%;
    min-width: 300px;
 }
 
 .left-panel__title {
-   font-size: 2vw;
+   font-size: 1.5vw;
    font-weight: 500;
    line-height: 100%;
    color: rgba(229, 229, 229, 1);;
-   margin-bottom: 5%;
+   margin-bottom: 2%;
 }
 
 :is(.left-panel__phone, .left-panel__email, .left-panel__skype, .left-panel__address) {
    display: flex;
    align-items: end;
-   margin-bottom: 5%;
+   margin-bottom: 2%;
 }
 
 :is(.phone__img, .email__img, .skype__img, .address__img) {
@@ -38,7 +37,7 @@
 }
 
 .left-panel__text {
-   font-size: 1.8vw;
+   font-size: 1.2vw;
    font-weight: 400;
    line-height: 100%;
    color: rgba(229, 229, 229, 1);;
@@ -49,15 +48,15 @@
    display: flex;
    flex-direction: column;
    flex: 1;
-   margin-top: 3%;
+   margin-top: 2%;
    min-width: 300px;
 }
 
 .subscribe-panel__title {
-   font-size: 2vw;
+   font-size: 1.5vw;
    font-weight: 500;
    color: rgba(229, 229, 229, 1);;
-   margin-bottom: 5%;
+   margin-bottom: 2%;
 }
 
 .subscribe-panel__form {
@@ -66,7 +65,7 @@
 }
 
 .subscribe-panel__input-label {
-   font-size: 1.8vw;
+   font-size: 1.5vw;
    font-weight: 400;
    line-height: 100%;
    color: rgba(229, 229, 229, 1);
@@ -76,11 +75,11 @@
 .subscribe-panel__input-container {
    display: flex;
    width: 100%;
-   margin-bottom: 5%;
+   margin-bottom: 3%;
 }
 
 .subscribe-panel__input {
-   font-size: 2vw;
+   font-size: 1.2vw;
    font-weight: 400;
    line-height: 100%;
    width: 100%;
@@ -89,17 +88,17 @@
 }
 
 .subscribe-panel__input::placeholder {
-   font-size: 2vw;
+   font-size: 1.2vw;
    font-weight: 400;
    line-height: 100%;
    padding-left: 1%;
 }
 
 .subscribe-panel__button {
-   font-size: 1.8vw;
+   font-size: 1.2vw;
    font-weight: 300;
    width: auto;
-   padding: 2%;
+   padding: 0.5%;
    color: rgba(229, 229, 229, 1);
    border: 1px solid rgba(229, 229, 229, 1);
    border-radius: 3px;
@@ -120,7 +119,7 @@
 }
 
 .subscribe-panel__socials {
-   margin-bottom: 10%;
+   margin-bottom: 3%;
 }
 
 .subscribe-panel__icon {
@@ -132,13 +131,13 @@
    justify-content: space-around;
    align-items: center;
    border-top: 1px solid rgba(229, 229, 229, 1);
-   height: 8vh;
+   height: 6vh;
 }
 
 .footer__logo {
-   font-size: 2.5vw;
+   font-size: 2vw;
    font-weight: 900;
-   line-height: 1;
+   line-height: 100%;
    color: rgba(229, 229, 229, 1);
 }
 
@@ -148,7 +147,7 @@
 }
 
 .footer__text {
-   font-size: 2.5vw;
+   font-size: 2vw;
    font-weight: 400;
    color: rgba(229, 229, 229, 1);
 }

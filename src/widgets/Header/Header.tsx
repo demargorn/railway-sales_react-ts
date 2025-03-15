@@ -1,8 +1,7 @@
 import { Link } from 'react-router';
-import styles from './Main.module.css';
+import styles from './Header.module.css';
 
-const Main = () => {
-  
+const Header = () => {
    return (
       <main className={styles['main']}>
          <h1 className={styles['logo']}>Railway Sales</h1>
@@ -38,11 +37,11 @@ const Main = () => {
                </Link>
             </div>
          </nav>
-         <h1 className={styles['main-title']}>
+         <h2 className={styles['main-title']}>
             Вся жизнь - <span className={styles['main-title__slogan']}>путешествие!</span>
-         </h1>
+         </h2>
 
-         {/* <form className={styles['search-form']}>
+         <form className={styles['search-form']}>
             <div className={styles['search-form__direction']}>
                <label htmlFor='direction' className={styles['search-form__direction-label']}>
                   Направление
@@ -53,6 +52,11 @@ const Main = () => {
                      type='text'
                      placeholder='откуда'
                      className={styles['search-form__direction-input']}
+                  />
+                  <img
+                     src='/src/shared/icons/refresh-icon.svg'
+                     alt='refresh icon'
+                     className={styles['search-form__input-refresh']}
                   />
                   <input
                      type='text'
@@ -72,6 +76,11 @@ const Main = () => {
                      placeholder='дд/мм/гг'
                      className={styles['search-form__date-input']}
                   />
+                  <img
+                     src='/src/shared/icons/refresh-icon.svg'
+                     alt='refresh icon'
+                     className={styles['search-form__date-refresh']}
+                  />
                   <input
                      type='date'
                      placeholder='дд/мм/гг'
@@ -80,9 +89,9 @@ const Main = () => {
                </div>
             </div>
             <button className={styles['search-form__button']}>найти билеты</button>
-         </form> */}
+         </form>
       </main>
    );
 };
 
-export default Main;
+export default Header;
