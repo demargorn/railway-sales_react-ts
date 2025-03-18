@@ -7,25 +7,13 @@ const Header = () => {
          <h1 className={styles['logo']}>Railway Sales</h1>
          <nav className={styles['navbar']}>
             <div className={styles['navbar__content']}>
-               <Link
-                  to='/'
-                  onClick={() => window.scrollTo(0, 800)}
-                  className={styles['navbar__link']}
-               >
+               <Link to='/' className={styles['navbar__link']}>
                   О нас
                </Link>
-               <Link
-                  to='/'
-                  onClick={() => window.scrollTo(0, 1300)}
-                  className={styles['navbar__link']}
-               >
+               <Link to='/' className={styles['navbar__link']}>
                   Как это работает
                </Link>
-               <Link
-                  to='/'
-                  onClick={() => window.scrollTo(0, 1900)}
-                  className={styles['navbar__link']}
-               >
+               <Link to='/' className={styles['navbar__link']}>
                   Отзывы
                </Link>
                <Link
@@ -48,7 +36,7 @@ const Header = () => {
                </label>
                <div className={styles['search-form__direction-container']}>
                   <input
-                     id='direction'
+                     id='direction__from'
                      type='text'
                      placeholder='откуда'
                      className={styles['search-form__direction-input']}
@@ -56,9 +44,11 @@ const Header = () => {
                   <img
                      src='/src/shared/icons/refresh-icon.svg'
                      alt='refresh icon'
+                     onClick={() => console.log('click')}
                      className={styles['search-form__input-refresh']}
                   />
                   <input
+                     id='direction__to'
                      type='text'
                      placeholder='куда'
                      className={styles['search-form__direction-input']}

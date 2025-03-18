@@ -1,8 +1,10 @@
-import { createBrowserRouter } from 'react-router';
+import { createHashRouter } from 'react-router';
 import Layout from '@/app/providers/layouts/Layout';
 import Main from '@/pages/Main/Main';
+import SelectTrain from '@/pages/Select/SelectTrain/SelectTrain';
+import SelectSeat from '@/pages/Select/SelectSeat/SelectSeat';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
    {
       path: '/',
       element: <Layout />,
@@ -10,6 +12,14 @@ const router = createBrowserRouter([
          {
             path: '/',
             element: <Main />,
+         },
+         {
+            path: '/trains',
+            element: <SelectTrain />,
+         },
+         {
+            path: '/seats',
+            element: <SelectSeat />,
          },
       ],
    },
