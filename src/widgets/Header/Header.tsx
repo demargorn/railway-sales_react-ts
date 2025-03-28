@@ -1,7 +1,9 @@
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import styles from './Header.module.css';
 
 const Header = () => {
+   const navigate = useNavigate();
+
    return (
       <main className={styles['main']}>
          <h1 className={styles['logo']}>Railway Sales</h1>
@@ -78,7 +80,9 @@ const Header = () => {
                   />
                </div>
             </div>
-            <button className={styles['search-form__button']}>найти билеты</button>
+            <button className={styles['search-form__button']} onClick={() => navigate('/trains')}>
+               найти билеты
+            </button>
          </form>
       </main>
    );

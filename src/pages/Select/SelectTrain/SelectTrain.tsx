@@ -141,13 +141,33 @@ const SelectTrain = () => {
                </div>
             </form>
             <form className={styles['widget__price']}>
-               <div className={styles['price__container']}>
-                  <label htmlFor="" className={styles['price__label']}>Стоимость</label>
-                  <input type='range' id='min' className={styles['price__range']} min='1920' max='7000' />
-                  <input type='range' id='max' className={styles['price__range']} min='1920' max='7000' />
-                  <div className={styles['price__labels']}>
-                     <span id='min-value' className={styles['price__min']}>1920</span>
-                     <span id='max-value' className={styles['price__max']}>7000</span>
+               <div className={styles['widget__price-content']}>
+                  <span className={styles['widget__price-title']}>Стоимость</span>
+                  <div className={styles['widget__slider']}>
+                     <span>от</span>
+                     <span>до</span>
+                  </div>
+                  <div className={styles['widget__rangeslider']}>
+                     <input
+                        type='range'
+                        name='range'
+                        min='1920'
+                        max='7000'
+                        defaultValue='1920'
+                        className={styles['input-ranges']}
+                     />
+                     <input
+                        type='range'
+                        name='range'
+                        min='1920'
+                        max='7000'
+                        defaultValue='4500'
+                        className={styles['input-ranges']}
+                     />
+                  </div>
+                  <div className={styles['value-labels']}>
+                     <label className={styles['min-value']}>1920</label>
+                     <label className={styles['max-value']}>7 000</label>
                   </div>
                </div>
             </form>
