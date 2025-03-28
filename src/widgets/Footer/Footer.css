@@ -10,41 +10,39 @@
    justify-content: space-evenly;
 }
 
-.left-panel {
+.footer__left-panel {
    flex: 1;
    margin-top: 2%;
    min-width: 300px;
 }
 
-.left-panel__title {
+.footer__left-panel-title {
    font-size: 1.5vw;
    font-weight: 500;
-   line-height: 100%;
    color: rgba(229, 229, 229, 1);;
    margin-bottom: 2%;
 }
 
-:is(.left-panel__phone, .left-panel__email, .left-panel__skype, .left-panel__address) {
+:is(.footer__left-panel-phone, .footer__left-panel-email, .footer__left-panel-skype, .footer__left-panel-address) {
    display: flex;
    align-items: end;
    margin-bottom: 2%;
 }
 
-:is(.phone__img, .email__img, .skype__img, .address__img) {
+:is(.footer__phone-img, .footer__email-img, .footer__skype-img, .footer__address-img) {
    width: 5%;
    max-height: 32px;
    margin-right: 3%;
 }
 
-.left-panel__text {
+.footer__left-panel-text {
    font-size: 1.2vw;
    font-weight: 400;
-   line-height: 100%;
    color: rgba(229, 229, 229, 1);;
    text-decoration: none;
 }
 
-.subscribe-panel {
+.footer__subscribe-panel {
    display: flex;
    flex-direction: column;
    flex: 1;
@@ -52,49 +50,46 @@
    min-width: 300px;
 }
 
-.subscribe-panel__title {
+.footer__subscribe-panel-title {
    font-size: 1.5vw;
    font-weight: 500;
    color: rgba(229, 229, 229, 1);;
    margin-bottom: 2%;
 }
 
-.subscribe-panel__form {
+.footer__subscribe-panel-form {
    display: flex;
    flex-direction: column;
 }
 
-.subscribe-panel__input-label {
+.footer__subscribe-panel-input-label {
    font-size: 1.5vw;
    font-weight: 400;
-   line-height: 100%;
    color: rgba(229, 229, 229, 1);
    margin-bottom: 3%;
 }
 
-.subscribe-panel__input-container {
+.footer__subscribe-panel-input-container {
    display: flex;
    width: 100%;
    margin-bottom: 3%;
 }
 
-.subscribe-panel__input {
+.footer__subscribe-panel-input {
    font-size: 1.2vw;
    font-weight: 400;
-   line-height: 100%;
    width: 100%;
    max-width: 300px;
    padding-left: 1%;
 }
 
-.subscribe-panel__input::placeholder {
+.footer__subscribe-panel-input::placeholder {
    font-size: 1.2vw;
    font-weight: 400;
-   line-height: 100%;
    padding-left: 1%;
 }
 
-.subscribe-panel__button {
+.footer__subscribe-panel-button {
    font-size: 1.2vw;
    font-weight: 300;
    width: auto;
@@ -109,20 +104,20 @@
    cursor: pointer;
 }
 
-.subscribe-panel__button:hover {
+.footer__subscribe-panel-button:hover {
    background: #ffca62;
    color: #000;
 }
 
-.subscribe-panel__button:active {
+.footer__subscribe-panel-button:active {
    background: rgba(229, 229, 229, 1);
 }
 
-.subscribe-panel__socials {
+.footer__subscribe-panel-socials {
    margin-bottom: 3%;
 }
 
-.subscribe-panel__icon {
+.footer__subscribe-panel-icon {
    margin-right: 5%;
 }
 
@@ -137,7 +132,6 @@
 .footer__logo {
    font-size: 2vw;
    font-weight: 900;
-   line-height: 100%;
    color: rgba(229, 229, 229, 1);
 }
 

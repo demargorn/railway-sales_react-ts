@@ -1,104 +1,104 @@
-import styles from './Footer.module.css';
+import './Footer.css';
 
 const Footer = () => {
    /** поднимаемся наверх */
    const handleMoveToTop = () => window.scrollTo(0, 0);
 
    return (
-      <footer className={styles['footer__container']}>
-         <section className={styles['footer__top']}>
-            <aside className={styles['left-panel']}>
-               <h3 className={styles['left-panel__title']}>Свяжитесь с нами</h3>
-               <div className={styles['left-panel__phone']}>
+      <footer className='footer footer__container'>
+         <section className='footer__top'>
+            <aside className='footer__left-panel'>
+               <h3 className='footer__left-panel-title'>Свяжитесь с нами</h3>
+               <div className='footer__left-panel-phone'>
                   <img
                      src='/src/shared/icons/phone-icon.svg'
                      alt='phone icon'
-                     className={styles['phone__img']}
+                     className='footer__phone-img'
                   />
-                  <a href='tel:+78000000000' className={styles['left-panel__text']}>
+                  <a href='tel:+78000000000' className='footer__left-panel-text'>
                      8(800) 000 00 00
                   </a>
                </div>
-               <div className={styles['left-panel__email']}>
+               <div className='footer__left-panel-email'>
                   <img
                      src='/src/shared/icons/mail-icon.svg'
                      alt='email icon'
-                     className={styles['email__img']}
+                     className='footer__email-img'
                   />
-                  <a href='mailto:inbox@mail.ru' className={styles['left-panel__text']}>
+                  <a href='mailto:inbox@mail.ru' className='footer__left-panel-text'>
                      inbox@mail.ru
                   </a>
                </div>
-               <div className={styles['left-panel__skype']}>
+               <div className='footer__left-panel-skype'>
                   <img
                      src='/src/shared/icons/skype-icon.svg'
                      alt='skype icon'
-                     className={styles['skype__img']}
+                     className='footer__skype-img'
                   />
-                  <span className={styles['left-panel__text']}>tu.train.tickets</span>
+                  <span className='footer__left-panel-text'>tu.train.tickets</span>
                </div>
-               <div className='left-panel__address'>
+               <div className='footer__left-panel-address'>
                   <img
                      src='/src/shared/icons/location-icon.svg'
                      alt='address icon'
-                     className={styles['address__img']}
+                     className='footer__address-img'
                   />
-                  <span className={styles['left-panel__text']}>г. Москва ул. Московская 27</span>
+                  <span className='footer__left-panel-text'>г. Москва ул. Московская 27</span>
                </div>
             </aside>
-            <article className={styles['subscribe-panel']}>
-               <div className={styles['subscribe-panel__email']}>
-                  <h3 className={styles['subscribe-panel__title']}>Подписка</h3>
-                  <form className={styles['subscribe-panel__form']}>
+            <article className='footer__subscribe-panel'>
+               <div className='footer__subscribe-panel-email'>
+                  <h3 className='footer__subscribe-panel-title'>Подписка</h3>
+                  <form className='footer__subscribe-panel-form'>
                      <label
                         htmlFor='subscribe-panel__input'
-                        className={styles['subscribe-panel__input-label']}
+                        className='footer__subscribe-panel-input-label'
                      >
                         Будьте в курсе событий
                      </label>
-                     <div className={styles['subscribe-panel__input-container']}>
+                     <div className='footer__subscribe-panel-input-container'>
                         <input
                            id='subscribe-panel__input'
                            type='email'
                            name='subscribe-panel__input'
                            placeholder='e-mail'
-                           className={styles['subscribe-panel__input']}
+                           className='footer__subscribe-panel-input'
                         />
-                        <button className={styles['subscribe-panel__button']}>отправить</button>
+                        <button className='footer__subscribe-panel-button'>отправить</button>
                      </div>
                   </form>
                </div>
-               <div className={styles['subscribe-panel__social']}>
-                  <h3 className={styles['subscribe-panel__title']}>Подписывайтесь на нас</h3>
-                  <div className={styles['subscribe-panel__socials']}>
-                     <a href='#' className={styles['subscribe-panel__icon']}>
-                        <img src='/src/shared/icons/youtube-icon.svg' alt='youtube icon' />
+               <div className='footer__subscribe-panel-social'>
+                  <h3 className='footer__subscribe-panel-title'>Подписывайтесь на нас</h3>
+                  <div className='footer__subscribe-panel-socials'>
+                     <a href='#' className='footer__subscribe-panel-icon'>
+                        <img src='/src/shared/icons/youtube-icon.svg' alt='youtube-icon' />
                      </a>
-                     <a href='#' className={styles['subscribe-panel__icon']}>
-                        <img src='/src/shared/icons/linkedin-icon.svg' alt='linkedin icon' />
+                     <a href='#' className='footer__subscribe-panel-icon'>
+                        <img src='/src/shared/icons/linkedin-icon.svg' alt='linkedin-icon' />
                      </a>
-                     <a href='#' className={styles['subscribe-panel__icon']}>
-                        <img src='/src/shared/icons/google-icon.svg' alt='google icon' />
+                     <a href='#' className='footer__subscribe-panel-icon'>
+                        <img src='/src/shared/icons/google-icon.svg' alt='google-icon' />
                      </a>
-                     <a href='#' className={styles['subscribe-panel__icon']}>
-                        <img src='/src/shared/icons/fb-icon.svg' alt='facebook icon' />
+                     <a href='#' className='footer__subscribe-panel-icon'>
+                        <img src='/src/shared/icons/fb-icon.svg' alt='facebook-icon' />
                      </a>
-                     <a href='#' className={styles['subscribe-panel__icon']}>
-                        <img src='/src/shared/icons/twitter-icon.svg' alt='twitter icon' />
+                     <a href='#' className='footer__subscribe-panel-icon'>
+                        <img src='/src/shared/icons/twitter-icon.svg' alt='twitter-icon' />
                      </a>
                   </div>
                </div>
             </article>
          </section>
-         <section className={styles['footer__bottom']}>
-            <h1 className={styles['footer__logo']}>Railway Sales</h1>
+         <section className='footer__bottom'>
+            <h1 className='footer__logo'>Railway Sales</h1>
             <img
                src='/src/shared/icons/to-top-circle.svg'
-               alt='to top button'
+               alt='to-top-button'
                onClick={handleMoveToTop}
-               className={styles['footer__btn-circle']}
+               className='footer__btn-circle'
             />
-            <span className={styles['footer__text']}>2025 WEB</span>
+            <span className='footer__text'>2025 WEB</span>
          </section>
       </footer>
    );

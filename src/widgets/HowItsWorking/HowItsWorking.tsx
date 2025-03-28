@@ -1,38 +1,36 @@
-import styles from './HowItsWorking.module.css';
+import './HowItsWorking.css';
 
 const HowItsWorking = () => {
    return (
-      <section className={styles['how-its-working']}>
-         <div className={styles['how-its-working__header']}>
-            <h2 className={styles['how-its-working__title']}>Как это работает</h2>
-            <button className={styles['how-its-working__button']}>Узнать больше</button>
+      <section className='how-its-working'>
+         <div className='how-its-working__header'>
+            <h2 className='how-its-working__header-title'>Как это работает</h2>
+            <button className='how-its-working__header-button'>Узнать больше</button>
          </div>
-         <div className={styles['how-its-working__body']}>
-            <div className={styles['how-its-working__order']}>
+         <div className='how-its-working__body'>
+            <div className='how-its-working__order'>
                <img
                   src='/src/shared/icons/pc_how.svg'
                   alt='pc icon'
-                  className={styles['how-its-working__image']}
+                  className='how-its-working__image'
                />
-               <span className={styles['how-its-working__text']}>Удобный заказ на сайте</span>
+               <span className='how-its-working__text'>Удобный заказ на сайте</span>
             </div>
-            <div className={styles['how-its-working__online']}>
+            <div className='how-its-working__online'>
                <img
                   src='/src/shared/icons/building_how.svg'
                   alt='pc icon'
-                  className={styles['how-its-working__image']}
+                  className='how-its-working__image'
                />
-               <span className={styles['how-its-working__text']}>
-                  Нет необходимости ехать в офис
-               </span>
+               <span className='how-its-working__text'>Нет необходимости ехать в офис</span>
             </div>
-            <div className={styles['how-its-working__choice']}>
+            <div className='how-its-working__choice'>
                <img
                   src='/src/shared/icons/planet_how.svg'
                   alt='pc icon'
-                  className={styles['how-its-working__image']}
+                  className='how-its-working__image'
                />
-               <span className={styles['how-its-working__text']}>Огромный выбор направлений</span>
+               <span className='how-its-working__text'>Огромный выбор направлений</span>
             </div>
          </div>
       </section>

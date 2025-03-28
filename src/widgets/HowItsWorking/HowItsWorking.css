@@ -30,17 +30,16 @@
    padding-top: 5%;
 }
 
-.how-its-working__title {
+.how-its-working__header-title {
    font-size: 2vw;
    font-weight: 500;
-   line-height: 100%;
    color: rgba(229, 229, 229, 1);
    margin-right: 30%;
    text-transform: uppercase;
    text-align: center;
 }
 
-.how-its-working__button {
+.how-its-working__header-button {
    font-size: 2vw; 
    font-weight: 700;
    min-width: 30%; 
@@ -54,12 +53,12 @@
    transition: all 0.3s;
 }
 
-.how-its-working__button:hover {
+.how-its-working__header-button:hover {
    color: #000;
    border: 1px solid #000;
 }
 
-.how-its-working__button:active {
+.how-its-working__header-button:active {
    background-color: rgba(229, 229, 229, 1);
 }
 
@@ -79,7 +78,7 @@
    flex: 1;
 }
 
-.how-its-working__image {
+.how-its-working__order-image {
    width: 8vw;
    margin-bottom: 2%;
 }
@@ -87,7 +86,6 @@
 .how-its-working__text {
    font-size: 1.5vw;
    font-weight: 400;
-   line-height: 120%;
    width: 60%;
    text-align: center;
    color: rgba(229, 229, 229, 1);

@@ -9,7 +9,7 @@
    padding-top: 1%;
 }
 
-.logo {
+.main__logo {
    font-size: 2.5vw;
    color: rgba(229, 229, 229, 1);
    height: auto;
@@ -17,11 +17,11 @@
    margin-bottom: 1.5%;
 }
 
-.logo:hover {
+.main__logo:hover {
    cursor: pointer;
 }
 
-.navbar {
+.main__navbar {
    display: flex;
    align-items: center;
    width: 100%;
@@ -29,41 +29,38 @@
    background-color: #292929;
 }
 
-.navbar__content {
+.main__navbar-content {
    display: flex;
    flex-grow: 1;
    margin-left: 5%;
 }
 
-.navbar__link {
+.main__navbar-link {
    font-size: 1.8vw;
-   line-height: 100%;
    color: rgba(229, 229, 229, 1);
    text-decoration: none;
 }
 
-.navbar__link:hover {
+.main__navbar-link:hover {
    color: #ffa800;
 }
 
-.navbar__link:not(:first-child) {
+.main__navbar-link:not(:first-child) {
    margin-left: 5%;
 }
 
-.main-title {
+.main__title {
    display: inline-block;
    font-size: 3.5vw;
    font-weight: 100;
    width: 35%;
-   line-height: 100%;
    color: rgba(229, 229, 229, 1);
    margin: 20% 40% 15% 10%;
 }
 
-.main-title__slogan {
+.main__title-slogan {
    font-size: 4vw;
    font-weight: 700;
-   line-height: 100%;
    color: rgba(229, 229, 229, 1);
 }
 
@@ -108,7 +105,6 @@
 .search-form__date-label {
    font-size: 1.8vw;
    font-weight: 300;
-   line-height: 100%;
    color: rgba(229, 229, 229, 1);
    margin: 80px 0 5px 20px;
 }
@@ -117,7 +113,6 @@
 .search-form__date-input {
    font-size: 1.5vw;
    font-weight: 400;
-   line-height: 100%;
    padding: 5px;
    width: 325px;
    height: 60px;
@@ -155,7 +150,6 @@
 .search-form__button {
    font-size: 1.5vw;
    font-weight: 700;
-   line-height: 100%;
    color: rgba(41, 41, 41, 1);
    background-color: #ffa800;
    width: 325px;
