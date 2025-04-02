@@ -40,7 +40,7 @@ const Header = () => {
                      className='search-form__direction-input'
                   />
                   <img
-                     src='/src/shared/icons/refresh-icon.svg'
+                     src='assets/icons/refresh-icon.svg'
                      alt='refresh icon'
                      onClick={() => console.log('click')}
                      className='search-form__input-refresh'

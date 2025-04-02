@@ -4,7 +4,7 @@
    position: relative;
    width: 100%;
    min-height: 50vh;
-   background: url('/src/shared/images/main-page__background.png');
+   background: url('/src/shared/assets/images/main-page__background.png');
    background-size: cover;
    padding-top: 1%;
 }

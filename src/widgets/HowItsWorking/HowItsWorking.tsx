@@ -10,7 +10,7 @@ const HowItsWorking = () => {
          <div className='how-its-working__body'>
             <div className='how-its-working__order'>
                <img
-                  src='/src/shared/icons/pc_how.svg'
+                  src='assets/icons/pc_how.svg'
                   alt='pc icon'
                   className='how-its-working__image'
                />
@@ -18,7 +18,7 @@ const HowItsWorking = () => {
             </div>
             <div className='how-its-working__online'>
                <img
-                  src='/src/shared/icons/building_how.svg'
+                  src='assets/icons/building_how.svg'
                   alt='pc icon'
                   className='how-its-working__image'
                />
@@ -26,7 +26,7 @@ const HowItsWorking = () => {
             </div>
             <div className='how-its-working__choice'>
                <img
-                  src='/src/shared/icons/planet_how.svg'
+                  src='assets/icons/planet_how.svg'
                   alt='pc icon'
                   className='how-its-working__image'
                />
