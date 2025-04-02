@@ -12,7 +12,6 @@ export default defineConfig({
       }),
    ],
    base: '/railway-sales_react-ts/',
-   publicDir: './src/app/shared',
    resolve: {
       alias: {
          '@': fileURLToPath(new URL('./src', import.meta.url)),
